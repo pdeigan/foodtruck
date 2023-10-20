@@ -1,9 +1,9 @@
-defmodule Estee do
+defmodule Foodtruck do
   @data_api "https://data.sfgov.org/resource/rqzj-sfat.csv"
   @filepath "./data/Mobile_Food_Facility_Permit.csv"
 
   @moduledoc """
-  Documentation for `Estee`.
+  Documentation for `Foodtruck`.
   """
 
   @spec run() :: {:error, atom()} | :ok
@@ -13,7 +13,7 @@ defmodule Estee do
 
   ## Examples
 
-      iex> Estee.run()
+      iex> Foodtruck.run()
       :ok
 
   """
