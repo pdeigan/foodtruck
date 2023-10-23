@@ -1,6 +1,6 @@
 # Foodtruck
 
-**TODO: Add description**
+This project pulls data from the San Francisco food truck venodr database and does some simple breakdowns of the provided data. 
 
 ## Installation
 
