@@ -23,7 +23,8 @@ defmodule Foodtruck.MixProject do
     [
       {:csv, "~> 3.2"},
       {:httpoison, "~> 2.0"},
-      {:mox, "~> 0.5.2", only: :test}
+      {:mox, "~> 0.5.2", only: :test},
+      {:tzdata, "~> 1.1"},
     ]
   end
 end

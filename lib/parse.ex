@@ -21,8 +21,8 @@ defmodule Parse do
       "expired" ->
         get_expired(data)
 
-      "expiring" ->
-        get_expiring(data)
+      "approved" ->
+        get_approved(data)
 
       _ ->
         IO.puts("Entry not found\n")
@@ -57,13 +57,13 @@ defmodule Parse do
     data
     |> Enum.filter(fn x -> Map.get(x, :status) == "EXPIRED" end)
     |> Enum.sort_by(& &1.applicant)
-    |> Enum.each(fn x -> IO.puts(Map.get(x, :applicant) <> ", " <> Map.get(x, :address)) end)
+    |> Enum.each(fn x -> IO.puts(Map.get(x, :applicant)  <> ", " <> Map.get(x, :address) <> ", Expired: " <> Map.get(x, :expirationdate)) end)
 
     IO.puts("\n\n")
   end
 
-  defp get_expiring(data) do
-    IO.puts("~~~~~List of Vendors with Expiring Permits~~~~~\n")
+  defp get_approved(data) do
+    IO.puts("~~~~~List of Vendors with Approved Permits~~~~~\n")
 
     data
     |> Enum.filter(fn x -> Map.get(x, :status) == "APPROVED" end)

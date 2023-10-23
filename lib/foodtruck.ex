@@ -14,7 +14,7 @@ defmodule Foodtruck do
   ## Examples
 
       iex> Foodtruck.run()
-      :ok
+      :okFo
 
   """
   def run do
@@ -23,7 +23,7 @@ defmodule Foodtruck do
     IO.puts("  pushcarts - retrieves pushcarts in the city")
     IO.puts("  trucks - retrieves trucks in the city")
     IO.puts("  expired - retrieves food trucks with expired permits")
-    IO.puts("  expiring - retrieves food trucks with permits that expire within the next 30 days")
+    IO.puts("  approved - retrieves food trucks with permits that have been approved")
 
     input =
       IO.gets("Which would you like today? Enter now: ")
