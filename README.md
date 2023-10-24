@@ -2,6 +2,15 @@
 
 This project pulls data from the San Francisco food truck vendor database and does some simple breakdowns of the provided data. 
 
+To run the application, pull the source code to your machine. From the foodtruck directory, run the following:
+```elixir
+iex -S mix
+Foodtruck.run()
+```
+
+From here you will be prompted to run certain commands that are available.
+
+
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
