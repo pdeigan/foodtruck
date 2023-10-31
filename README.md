@@ -10,6 +10,15 @@ Foodtruck.run()
 
 From here you will be prompted to run certain commands that are available.
 
+# Code Overview
+
+There are three main files to be reviewed:
+1. lib/fetch.ex
+    - This module fetches the latest dataset from the public API to be sure the user is receiving the latest information regarding food trucks
+2. lib/foodtruck.ex
+    - This module is the main module, where the application is run through
+3. lib/parse.ex
+    - This module parses the data the is fetched via fetch.ex, and returns the requested data to the user
 
 ## Installation
 
